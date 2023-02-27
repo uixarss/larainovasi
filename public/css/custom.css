@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+
+*, body, html {
+    font-family: 'Public Sans', sans-serif;
+    text-rendering: optimizeLegibility!important;
+    -webkit-font-smoothing: antialiased!important;
+}
+
+.home-keunggulan-box {
+    background: #fff;
+    border-radius: 30px;
+    padding: 70px 30px 46px;
+    position: relative;
+    margin-bottom: 44px;
+    min-height: 238px;
+    max-height: 238px;
+}
+
+.home-keunggulan-icon {
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+}
+
+.home-keunggulan-icon {
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #FFCD40;
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.buttonn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    /* white-space: nowrap; */
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-detail{
+    background-color: #E2E8F0 !important;
+    color: black;
+}
+
+.btn-mekanisme span{
+    color: #666 !important;
+}
+
+.btn-detail:hover{
+    background-color: #3B78E7 !important;
+    color: #fff !important;
+}
+
+.btn-mekanisme{
+    background-color: #f4f4f4 !important;
+    text-decoration: none;
+}
+
+.btn-mekanisme:hover{
+    background-color: #3B78E7 !important;
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.images{
+    height: 390px !important;
+}
+
+.nav-link{
+    color: #1A202C !important;
+}
+
+.active .nav-link{
+    color: #FFCD40 !important;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 67px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {;
+        height: 100%;
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        height: 100%;
+        left: 0;
+        transition: left 400ms ease-in-out;
+        width: 65%;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 400ms ease-in;
+    }
+
+    .images{
+        height: 190px !important;
+        width: 100% !important;
+    }
+}
